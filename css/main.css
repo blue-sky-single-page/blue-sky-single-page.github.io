@@ -159,4 +159,37 @@ footer {
       margin-top: 2em;
       margin-bottom: 5.5em; }
 
+/* styling the JS jquery animations etc.*/
+div.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  font-size: 30px;
+  padding-left: 15px;
+  opacity: .8; }
+
+/* Tooltip -----------------------------------------------*/
+.tooltip {
+  display: inline-block;
+  width: 120px; }
+
+div.back-to-top a + .tooltip > .tooltip-inner {
+  background-color: #6ec5ea;
+  color: #FFF;
+  padding: 5px;
+  font-size: 14px; }
+
+div.back-to-top a + .tooltip.top > .tooltip-arrow {
+  border-top: 5px solid #6ec5ea; }
+
+/*-----------------------------------------------*/
+
 /*# sourceMappingURL=main.css.map */
