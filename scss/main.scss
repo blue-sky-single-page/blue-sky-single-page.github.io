@@ -86,6 +86,8 @@ section#features {
 			.glyphicon-heart {
 			color: #E04C4C;
 			}
+			
+
 			.feature-tag {
 			max-width: 10.7em;
 			display: inline-block;
@@ -94,6 +96,13 @@ section#features {
 			font-size: 1.7rem;
 			}
 		}	
+}
+div#brands {
+	.glyphicon-barcode{color: #E04C4C; }
+}
+div#innovations{
+			.fa{font-size: 2.5rem;}
+			.fa-industry{color: #E04C4C; }
 }
 	
 /*pricing table CSS:*/

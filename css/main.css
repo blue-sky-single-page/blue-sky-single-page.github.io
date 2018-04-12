@@ -81,6 +81,14 @@ section#features {
       margin-left: 1.5em;
       font-size: 1.7rem; }
 
+div#brands .glyphicon-barcode {
+  color: #E04C4C; }
+
+div#innovations .fa {
+  font-size: 2.5rem; }
+div#innovations .fa-industry {
+  color: #E04C4C; }
+
 /*pricing table CSS:*/
 @media (max-width: 48em) {
   table th h4, table table td h3, table table td {
