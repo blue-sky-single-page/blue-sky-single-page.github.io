@@ -33,15 +33,21 @@ $(document).ready(function(){
 
 /*============PAGINATION AJAX .LOAD START=====================================================*/
 $('#button-features').click(function(){
-	$('#features-main').load('index.html #features-main');
+	$('#features-main').load('index.html #features-main', function(){
+		$(this).hide().fadeIn(900);
+	});
 	return false;// return false - shall avoid the page scroll to top as default action of 'a' click
 });//end .click #button-features
 $('#button-brands').click(function(){
-	$('#features-main').load('features1.html #brands');
+	$('#features-main').load('features1.html #brands', function(){
+		$(this).hide().fadeIn(900);
+	});
 	return false;// return false - shall avoid the page scroll to top as default action of 'a' click
 });//end .click #button-brands$('#button-brands #button-innovations').removeClass('active');
 $('#button-innovations').click(function(){
-	$('#features-main').load('features2.html #innovations');
+	$('#features-main').load('features2.html #innovations', function(){
+		$(this).hide().fadeIn(900);
+	});
 	return false;// return false - shall avoid the page scroll to top as default action of 'a' click
 });//end .click #button-innovations	
 
