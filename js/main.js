@@ -8,7 +8,7 @@ $(document).ready(function(){
 /* SCROLL-TO-TOP PAGE ARROW: ----------------------------------------------------------
 		 firstly, shall define the current window scroll position with method .scrollTop() then,
 		 when the arrow shall appear visible - fadeIn/fadeOut after  scrolling down of 500px , with the delay of 300ms */
-		var scrolDown_px = 500;
+			var scrolDown_px = 500;
 			var delayShow_ms = 300;
 			$(window).scroll(function(){
 				if ($(this).scrollTop() > scrolDown_px) {
@@ -30,5 +30,21 @@ $(document).ready(function(){
 
 		$('[data-toggle="tooltip"]').tooltip();
 /*-----------------------------------------------------------------------------------------*/
+
+/*============PAGINATION AJAX .LOAD START=====================================================*/
+$('#button-features').click(function(){
+	$('#features-main').load('index.html #features-main');
+	return false;// return false - shall avoid the page scroll to top as default action of 'a' click
+});//end .click #button-features
+$('#button-brands').click(function(){
+	$('#features-main').load('features1.html #brands');
+	return false;// return false - shall avoid the page scroll to top as default action of 'a' click
+});//end .click #button-brands$('#button-brands #button-innovations').removeClass('active');
+$('#button-innovations').click(function(){
+	$('#features-main').load('features2.html #innovations');
+	return false;// return false - shall avoid the page scroll to top as default action of 'a' click
+});//end .click #button-innovations	
+
+/*============PAGINATION AJAX .LOAD END=====================================================*/
 }); //end ready
 
